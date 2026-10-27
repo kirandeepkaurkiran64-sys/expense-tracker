@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <div class="topbar">
+      <h1>My Expenses</h1>
+      <div class="user-box">
+        <span id="hello"></span>
+        <button id="logout" class="logout">Log out</button>
+      </div>
+    </div>
+
+    <!-- Total money spent -->
+    <section class="total">
+      <span>Total spent</span>
+      <strong id="total">₹0</strong>
+    </section>
+
+    <!-- Form to add a new expense -->
+    <form id="expense-form">
+      <input type="text" id="title" placeholder="What did you buy?" required>
+      <input type="number" id="amount" placeholder="Amount (₹)" min="1" required>
+      <select id="category">
+        <option>Food</option>
+        <option>Travel</option>
+        <option>Study</option>
+        <option>Shopping</option>
+        <option>Other</option>
+      </select>
+      <input type="date" id="date" required>
+      <button type="submit">Add expense</button>
+    </form>
+
+    <!-- List of expenses appears here -->
+    <ul id="expense-list"></ul>
+    <p id="empty" class="empty">No expenses yet. Add your first one above.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

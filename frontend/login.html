@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log in - Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap auth-wrap">
+    <h1 id="auth-title">Log in</h1>
+
+    <form id="auth-form" class="auth-form">
+      <input type="text" id="name" placeholder="Your name">
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Password (min 6 characters)" required>
+      <button type="submit" id="auth-submit">Log in</button>
+      <p id="auth-error" class="error"></p>
+    </form>
+
+    <p class="switch">
+      <span id="toggle-text">New here?</span>
+      <a href="#" id="toggle-link">Create an account</a>
+    </p>
+  </main>
+
+  <script src="auth.js"></script>
+</body>
+</html>
